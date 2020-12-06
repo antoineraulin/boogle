@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\antoi\\Documents\\boogle\\Boogle\\Boogle.csproj": {}
+    "C:\\Users\\antoi\\Documents\\boogle\\Boogle\\Boogle.csproj": {}
   },
   "projects": {
-    "c:\\Users\\antoi\\Documents\\boogle\\Boogle\\Boogle.csproj": {
+    "C:\\Users\\antoi\\Documents\\boogle\\Boogle\\Boogle.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\antoi\\Documents\\boogle\\Boogle\\Boogle.csproj",
+        "projectUniqueName": "C:\\Users\\antoi\\Documents\\boogle\\Boogle\\Boogle.csproj",
         "projectName": "Boogle",
-        "projectPath": "c:\\Users\\antoi\\Documents\\boogle\\Boogle\\Boogle.csproj",
+        "projectPath": "C:\\Users\\antoi\\Documents\\boogle\\Boogle\\Boogle.csproj",
         "packagesPath": "C:\\Users\\antoi\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\antoi\\Documents\\boogle\\Boogle\\obj\\",
+        "outputPath": "C:\\Users\\antoi\\Documents\\boogle\\Boogle\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\antoi\\AppData\\Roaming\\NuGet\\NuGet.Config",

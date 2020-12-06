@@ -54,7 +54,7 @@ namespace Boogle
             string res = "faces du dé :";
             for (int i = 0; i < 6; i++)
             {
-                res += $"{i} : {_faces[i]}";
+                res += $"\n{i+1} : {_faces[i]}";
             }
             return res;
         }

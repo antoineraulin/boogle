@@ -1,10 +1,9 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Boogle;
 
-namespace BoogleTest
+namespace Boogle.Tests
 {
     [TestClass]
-    public class UnitTest1
+    public class JeuTests
     {
         [TestMethod]
         public void TestMethod1()
