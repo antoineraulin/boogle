@@ -6,7 +6,7 @@ namespace Boogle
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            // todo
         }
     }
 }
