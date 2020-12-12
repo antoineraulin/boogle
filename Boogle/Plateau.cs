@@ -70,9 +70,6 @@ namespace Boogle
 
 
         }
-        public bool Test_Plateau(string mot) 
-        {
-            
-        }
+       
     }
 }
