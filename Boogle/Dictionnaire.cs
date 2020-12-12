@@ -45,6 +45,7 @@ namespace Boogle
             {
                 if (item.Value != null && item.Key != 0)
                 {
+                    // Key c'est la taille des mots qui composent le tableau de mot (Value)
                     res += $"\n\t{item.Value.Length} mots de longueur {item.Key}";
                 }
 
@@ -64,6 +65,7 @@ namespace Boogle
                 {
                     if (item.Value != null && item.Key != 0)
                     {
+                        // Key c'est la taille des mots qui composent le tableau de mot (Value)
                         res += item.Key * item.Value.Length;
                     }
 
@@ -74,17 +76,17 @@ namespace Boogle
 
 
         /// <summary>
-        /// Test si 
+        /// Test si le mot appartient bien au dictionnaire.
         /// </summary>
-        /// <param name="word"></param>
-        /// <returns></returns>
+        /// <param name="word">Mot à vérifier</param>
+        /// <returns>true si le mot appartient bien au dictionnaire sinon false.</returns>
         public bool Contains(string word)
         {
-            Dictionary<int, string[]>.ValueCollection wordsCollection = _dictionary.Values;
+            Dictionary<int, string[]>.ValueCollection wordsCollection = _dictionary.Values; // on récupère juste les valeurs du dictionnaire.
             List<string> wordsList = new List<string>();
             foreach (string[] _words in wordsCollection)
             {
-                wordsList.AddRange(_words);
+                wordsList.AddRange(_words); // on ajoute à la list tout les mots d'une certaine longueur.
             }
             return wordsList.Contains(word);
         }
