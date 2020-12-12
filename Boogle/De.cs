@@ -8,6 +8,7 @@ namespace Boogle
         #region PRIVATE
 
         private char[] _faces;
+        private char _upperFace;
 
         #endregion
 
@@ -42,6 +43,7 @@ namespace Boogle
         public char Roll(Random random)
         {
             int index = random.Next(0, 6); // un index aléatoire parmis les 6 faces du dé.
+            _upperFace = _faces[index];
             return _faces[index]; // on renvoie le char situé sur le dé à l'index.
         }
 
@@ -69,6 +71,11 @@ namespace Boogle
         /// </summary>
         /// <value>Nouvelles faces du dé.</value>
         public char[] Faces { get { return _faces; } set { _faces = value; } }
+
+        /// <summary>
+        /// Face supérieure du dé.
+        /// </summary>
+        public char UpperFace { get { return _upperFace; } }
 
         #endregion
 

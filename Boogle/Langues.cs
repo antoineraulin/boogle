@@ -4,7 +4,7 @@ namespace Boogle
 {
     public class Langues
     {
-        public static string FR = "fr";
-        public static string EN = "en";
+        public static string FR = "français";
+        public static string EN = "anglais";
     }
 }

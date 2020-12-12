@@ -5,7 +5,7 @@ namespace Boogle
 {
     public class Joueur
     {
-        //Définition + on donne une valeur à la variable nom du joueur.
+         
 
         private string name;
         /// <summary>

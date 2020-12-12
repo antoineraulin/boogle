@@ -1,5 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Boogle;
+using System;
 
 namespace Boogle.Tests
 {
