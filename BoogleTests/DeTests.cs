@@ -1,7 +1,8 @@
+using Boogle;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
-namespace Boogle.Tests
+namespace BoogleTests
 {
     [TestClass]
     public class DeTests
@@ -9,7 +10,7 @@ namespace Boogle.Tests
         [TestMethod]
         public void De_Avec6FacesValides_RetourneUnDe()
         {
-            char[] faces = {'a','b','c','d','e','f'};
+            char[] faces = { 'a', 'b', 'c', 'd', 'e', 'f' };
             De de = new De(faces);
             Assert.AreEqual(faces, de.Faces, "Doit retourner un tableau de char : {'a','b','c','d','e','f'}");
         }
@@ -19,7 +20,7 @@ namespace Boogle.Tests
 
         public void De_Avec5Faces_RetourneNull()
         {
-            char[] faces = {'a','b','c','d','e'};
+            char[] faces = { 'a', 'b', 'c', 'd', 'e' };
             De de = new De(faces);
         }
 
@@ -34,9 +35,10 @@ namespace Boogle.Tests
         [TestMethod]
         public void De_LancerDuDe_RetourneUneFaceDuDe()
         {
-            char[] faces = {'a','b','c','d','e','f'};
+            char[] faces = { 'a', 'b', 'c', 'd', 'e', 'f' };
             De de = new De(faces);
-            char face = de.Roll();
+            Random r = new Random();
+            char face = de.Roll(r);
             bool success = Array.IndexOf(faces, face) > -1; // si la face retournée est bien dans notre liste de faces c'est parfait.
             Assert.IsTrue(success);
         }
@@ -44,11 +46,11 @@ namespace Boogle.Tests
         [TestMethod]
         public void De_DescriptionDuDe_RetourneUneDescription()
         {
-            char[] faces = {'a','b','c','d','e','f'};
+            char[] faces = { 'a', 'b', 'c', 'd', 'e', 'f' };
             De de = new De(faces);
             string description = de.ToString();
 
-            Assert.AreEqual("faces du dé :\n1 : a\n2 : b\n3 : c\n4 : d\n5 : e\n6 : f",description);
+            Assert.AreEqual("faces du dé :\n1 : a\n2 : b\n3 : c\n4 : d\n5 : e\n6 : f", description);
         }
     }
 }

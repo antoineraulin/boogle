@@ -21,15 +21,17 @@ namespace Boogle
         /// <param name="lang">Langue du dictionaire</param>
         public Dictionnaire(Dictionary<int, string[]> dictionary, string lang)
         {
-            if(lang == null || dictionary == null){
+            if (lang == null || dictionary == null)
+            {
                 // On génére une erreur par rapport aux arguments passé en paramètre de la méthode.
                 // throw arrête la méthode, ce qui suit ne sera pas exectué.
                 throw new ArgumentException("Les paramètres ne peuvent être null");
             }
-            if(dictionary.Count == 0){
+            if (dictionary.Count == 0)
+            {
                 throw new ArgumentException("Le dictionaire ne peut être vide");
             }
-            
+
             _lang = lang;
             _dictionary = dictionary;
         }
@@ -66,7 +68,7 @@ namespace Boogle
                     if (item.Value != null && item.Key != 0)
                     {
                         // Key c'est la taille des mots qui composent le tableau de mot (Value)
-                        res += item.Key * item.Value.Length;
+                        res += item.Value.Length;
                     }
 
                 }
@@ -90,6 +92,12 @@ namespace Boogle
             }
             return wordsList.Contains(word);
         }
+
+        #region GETTERS
+
+        public Dictionary<int, string[]> Dictionary { get { return _dictionary; } }
+
+        #endregion
 
         #endregion
     }
